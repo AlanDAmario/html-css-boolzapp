@@ -1,5 +1,22 @@
 /* **** VARIABILI ROOT**** */
 
 :root {
-    --bg-body: green;
+    --bg-header: #EAEAEA;
+    --font-name: 20px;
+    --font-access: 12px;
+    --access-color:rgb(118, 117, 117);
+}
+
+
+.notifications-bar{
+    background-color: blueviolet;
+}
+
+.search-bar{
+    background-color: chocolate;
+}
+
+
+.friend-list{
+    background-color: beige;
 }

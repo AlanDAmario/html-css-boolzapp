@@ -1,1 +1,26 @@
 /* ***RESPONSIVE TABLET**** */
+
+@media screen and (min-width: 768px){
+    .side-bar{
+        display: flex;
+        background-color: green;
+        display: block;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+
+    .side-bar .friend-list li{
+        height: 50px;
+        border: 1px solid black;
+    }
+
+    .notifications-bar{
+        display: none;
+    }
+
+    .search-bar{
+        display: none;
+
+    }
+}
+

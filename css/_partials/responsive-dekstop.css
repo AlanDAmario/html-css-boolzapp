@@ -1,1 +1,22 @@
 /* **** RESPONSIVE-DEKSTOP***** */
+
+@media screen and (min-width: 960px) {
+    .container{
+        width: 80%;
+        height: 90%;
+        margin: auto;
+    }
+    
+    .side-bar{
+        width: 350px;
+    }
+
+    .notifications-bar{
+        display: block;
+    }
+
+    .search-bar{
+        display: block;
+
+    }
+}
