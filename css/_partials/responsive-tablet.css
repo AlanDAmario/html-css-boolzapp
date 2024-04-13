@@ -13,7 +13,9 @@
         height: 50px;
         border: 1px solid black;
     }
-
+    .side-bar .fontawesome-header{
+        display: none;
+    }
     .notifications-bar{
         display: none;
     }
@@ -22,5 +24,38 @@
         display: none;
 
     }
+
+    .fontawesome-footer i{
+        display: block;
+    }
+    .fontawesome-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fontawesome-footer i{
+        color: var(--access-color);
+        font-size: 20px;
+    }
+
+    .fontawesome-footer .smile-font{
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .fontawesome-footer .mic-font{
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+    .smile-font>i:hover {
+        color:chocolate;
+        cursor: grab;
+        
+    }
+    .mic-font>i:hover{
+        color: rgb(57, 184, 11);
+        cursor: pointer;
+    }
+
 }
 

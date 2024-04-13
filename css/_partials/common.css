@@ -6,16 +6,6 @@ body{
     display: flex;
     background: to bottom, linear-gradient(#009588) 30%,  linear-gradient(#DBDAD3) 30%;
 }
-
-.container{
-    width: 100%;
-    display: flex;
-}
-
-.side-bar{
-    display: none;
-}
-
 header{
     background-color: var(--bg-header);
     height: 80px;
@@ -30,11 +20,26 @@ footer{
     
 }
 
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.side-bar{
+    display: none;
+}
+
+
+
 
 .chat{
-    background-image: url(/img/mine.jpg);
     height: calc(100% - 160px);
     overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    padding: 80px;
+    background-image: url(/img/mine.jpg);
 }
 .content{
     flex-grow: 1;
@@ -50,6 +55,10 @@ footer{
 .col-card{
     width: 100px;
     display: flex;
+}
+
+.card img:hover{
+    cursor: pointer;
 }
 
 header .card img{
@@ -71,6 +80,9 @@ header .card img{
     font-size: var(--font-name);
     font-weight: bold;
 }
+.text-card:hover{
+    cursor: pointer;
+}
 
 .last-access{
     color: var(--access-color);
@@ -90,44 +102,80 @@ header .card img{
     color: var(--access-color);
 }
 
+.fontawesome-header>i:hover{
+    cursor: pointer;
+}
+
 /* CHAT LIST */
 
 
-.chat ul{
-    padding: 100px;
-}
-
-.chat-list li{
+.chat-user, .chat-friend{
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin: 40px 0;
     padding: 20px;
+    font-size: 14px;
+    width: 100%;
 }
 
-.chat-list li:first-child{
+.chat-user{
     background-color: #D4F9BB;
+    margin-left: 60px;
 }
 
-.chat-list li:last-child{
+.chat-friend{
     background-color: white;
+    margin-right: 60px;
+}
+
+.show-more{
+    justify-content: center;
+    align-items: end;
+}
+.show-more p{
+    padding-top: 50px;
+    color: var(--access-color);
+    font-size: 10px
+}
+
+.show-more>i:hover{
+    color: red;
+    cursor: wait;
 }
 
 /* FOOTER */
 
-.fontawesome-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+.fontawesome-footer i{
+    display: none;
 }
 
-.fontawesome-footer>i{
-    color: var(--access-color);
+.fontawesome-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-/* **Utility */
+
+.message-bar{
+    width: 100%;
+    padding: 10px;
+}
+.message-bar input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+/* **Utilities */
 .d-flex{
     display: flex;
 }
 
 .wrap{
     flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
 }
