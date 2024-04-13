@@ -3,31 +3,40 @@
 @media screen and (min-width: 768px){
     .side-bar{
         display: flex;
-        background-color: green;
-        display: block;
         flex-direction: column;
         flex-shrink: 0;
+        overflow: hidden;
     }
-
-    .side-bar .friend-list li{
-        height: 50px;
-        border: 1px solid black;
-    }
+    
     .side-bar .fontawesome-header{
         display: none;
     }
     .notifications-bar{
         display: none;
     }
-
+    
     .search-bar{
         display: none;
-
     }
-
+    
     .fontawesome-footer i{
         display: block;
     }
+    /**********FRIEND LIST**********  */
+    .friend-list{
+        overflow-y: auto;
+    }
+    .side-bar .friend-list li{
+        height: 50px;
+        border: 1px solid black;
+    }
+
+    .friend-list li img{
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
     .fontawesome-footer{
         display: flex;
         justify-content: center;
@@ -56,6 +65,4 @@
         color: rgb(57, 184, 11);
         cursor: pointer;
     }
-
 }
-
