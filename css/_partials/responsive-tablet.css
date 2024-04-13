@@ -6,6 +6,7 @@
         flex-direction: column;
         flex-shrink: 0;
         overflow: hidden;
+        width: 80px;
     }
     
     .side-bar .fontawesome-header{
@@ -25,18 +26,33 @@
     /**********FRIEND LIST**********  */
     .friend-list{
         overflow-y: auto;
+        justify-content: center;
+        flex-shrink: 1;
     }
-    .side-bar .friend-list li{
-        height: 50px;
-        border: 1px solid black;
-    }
+    
 
     .friend-list li img{
-        width: 40px;
+        width: 60px;
         border-radius: 50%;
         object-fit: cover;
+        margin-left: 10px;
     }
 
+    .friend-content{
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    .friend-content:hover{
+        background-color: lightcoral;
+        cursor: pointer;
+    }
+    .friend-txt{
+        display: none;
+    }
+
+    .txt-time{
+        display: none;
+    }
     .fontawesome-footer{
         display: flex;
         justify-content: center;
